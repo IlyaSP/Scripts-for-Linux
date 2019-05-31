@@ -412,7 +412,7 @@ if __name__ == "__main__":
                          #"clamtk", "clamav-unofficial-sigs", "rkhunter", "python3-crontab", "libpam-pwquality"
     # ,"fail2ban"])
     # time.sleep(2)
-    #delete_app(del_pkg_name=["pitivi", "empathy", "empathy-common", "vinagre", "rdesktop"])
+    #delete_app(del_pkg_name=["pitivi", "empathy", "empathy-common", "vinagre", "rdesktop", "xinetd"])
     #time.sleep(2)
     #ssh_key(path_ssh_key = "/etc/ssh")
     #time.sleep(2)
