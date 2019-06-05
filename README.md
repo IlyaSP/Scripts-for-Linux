@@ -1,8 +1,9 @@
 # Scripts-for-Linux
 # scripts to configure and work with linux
 
-1.config_new_linux.py
-2.fail2ban_change_timer.py
+1.config_new_linux.py;
+
+2.fail2ban_change_timer.py;
 
 # 1. config_new_linux.py
   Скрипт предназначен для первичной настройки ОС linux. В него входит установка различных пакетов, удаление
