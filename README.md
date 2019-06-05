@@ -6,7 +6,7 @@
 не нужных приложений, настройка SSH, настройка терминала, оптимизация системы, настройка Fail2ban и другое. Перед использованием
 требуется установка пакета "python-crontab". Запускаться должен под пользователем root. Тестировался на ОС Ubintu 18.04 и 
 OS Parrot 4.19
-
+ 
 ###############################################################################################################################
   The script "config_new_linux.py" is intended for initial configuration of the linux OS. This includes installing various packages, removing
 unnecessary applications, SSH setup, terminal setup, system optimization, Fail2ban setup and more. Before use
