@@ -113,7 +113,7 @@ def config_ssh(ssh_new_port, path_ssh_config):
             list_new_param = [
                 "Port {0}".format(ssh_new_port),
                 "PermitRootLogin no",
-                "ClientAliveCountMax 2",
+                "ClientAliveInterval 900",
                 "MaxAuthTries 3",
                 "MaxSessions 2",
                 "TCPKeepAlive no",
@@ -140,13 +140,13 @@ def config_ssh(ssh_new_port, path_ssh_config):
                 elif re.match("PermitRootLogin", a[i]) is not None:  # delete other settings
                     a.pop(i)
 
-                elif re.match("#ClientAliveCountMax", a[i]) is not None:
-                    a.insert(i + 1, "ClientAliveCountMax 2\n")  # Reduce the lifetime of an inactive session
+                elif re.match("#ClientAliveInterval", a[i]) is not None:
+                    a.insert(i + 1, "ClientAliveInterval 900\n")  # Reduce the lifetime of an inactive session
                     i += 1
                     print("\033[92m{0}\033[00m".format("Reduce the lifetime of an inactive session"))
-                    list_add_param.append("ClientAliveCountMax 2")
+                    list_add_param.append("ClientAliveInterval 900")
 
-                elif re.match("ClientAliveCountMax", a[i]) is not None:  # Remove other settings
+                elif re.match("ClientAliveInterval", a[i]) is not None:  # Remove other settings
                     a.pop(i)
 
                 elif re.match("#MaxAuthTries", a[i]) is not None:
