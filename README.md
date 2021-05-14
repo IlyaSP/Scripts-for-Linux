@@ -5,6 +5,8 @@
 
 2.fail2ban_change_timer.py;
 
+3.docker
+
 # 1. config_new_linux.py
   Скрипт предназначен для первичной настройки ОС linux. В него входит установка различных пакетов, удаление
 не нужных приложений, настройка SSH, настройка терминала, оптимизация системы, настройка Fail2ban и другое. Перед использованием
@@ -22,3 +24,6 @@ OS Parrot 4.19
 
   The script is intended for changing the parameters of the fail2ban application. Runs through crontab.
 Tested on OS Ubintu 18.04 and OS Parrot 4.19, version fail2ban = 0.10.2
+
+# 3. docker
+  Папка для хранения скриптов для работы с docker
